@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+
+        <form id="forms">
+            
+            <div class="validationform">
+                <label for="fullname">Full Name <span style="color: red;">*</span> </label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+                <div class="error"></div>
+                <br>
+            </div>
+
+            <div class="validationform">
+                <label for="email">Email Address <span style="color: red;">*</span> </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <div class="error"></div>
+                <br>
+            </div>
+
+            <div class="validationform">
+                <label for="phone">Phone Number <span style="color: red;">*</span> </label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number">
+                <div class="error"></div>
+                <br>
+            </div>
+
+            <div class="validationform">
+                <label for="password">Password <span style="color: red;">*</span> </label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <div class="error"></div>
+                <br>
+            </div>
+
+            <div class="validationform">
+                <label for="confirmpassword">Confirm Password <span style="color: red;">*</span> </label>
+                <input type="password" id="confirmpassword" name="confirmpassword"
+                    placeholder="Enter the confirm password">
+                <div class="error"></div>
+                <br>
+            </div>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
